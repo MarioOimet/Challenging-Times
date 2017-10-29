@@ -1,9 +1,11 @@
 class PagesController < ApplicationController
   def home
   end
+
   def about
   end
+
   def lizards
-    @lizard = Lizard.find(params[:n])
+    @lnumber_of_lizards = params[:number].to_i
   end
 end

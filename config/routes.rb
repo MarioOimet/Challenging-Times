@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'lizards/:n', to: 'pages#lizards', as: 'lizards', n: /\d+/
+  get '/home', to: 'pages#home', as: 'home'
 
   get '/about_us', to: 'pages#about', as: 'about'
 
-  root to: 'pages#home', as:'home'
+  get 'lizard/:number', to: 'pages#lizards', as: 'lizards', number:/\d+/
+
+  root to: 'pages#home'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

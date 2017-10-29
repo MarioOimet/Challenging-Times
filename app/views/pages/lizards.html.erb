@@ -1,4 +1,5 @@
-<h2>Lizards</h2>
-<p>
-  <% @lizard.n %>
-</p>
+<h2><%= @number_of_lizards %> lizards</h2>
+
+  <% @number_of_lizards.times do%>
+  🦎
+  <% end %>
