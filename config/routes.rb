@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'pages', to: 'pages#home', as 'pages'
 
   get '/about', to: 'pages#about', as: 'about'
 
