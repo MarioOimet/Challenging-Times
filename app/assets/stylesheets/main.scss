@@ -1,0 +1,33 @@
+#main {
+  width: 600px;
+  margin: 0 auto;
+}
+
+body{
+  background-color: #ffbf80;
+}
+
+header ul li {
+  list-style: none;
+  list-style-position:inside;
+  text-align: center;
+  color:red;
+}
+
+p,
+#main {
+  text-align: justify;
+}
+
+h2,
+#main {
+  text-align: center;
+}
+
+ul,
+li,
+link,
+#main {
+  list-style: none;
+  text-align: center;
+}
