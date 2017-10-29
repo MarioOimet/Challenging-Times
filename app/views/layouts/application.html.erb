@@ -9,8 +9,7 @@
   </head>
 
   <body>
-    <%= link_to 'home', home_path %>
-    <%= link_to 'about', about_path %>
+    <%= render partial: 'common/header'%>
     <%= yield %>
   </body>
 </html>

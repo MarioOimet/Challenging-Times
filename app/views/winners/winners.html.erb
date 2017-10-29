@@ -1,1 +1,5 @@
 <h2>All Winners</h2>
+
+<%= render partial: 'winner',
+           collection: @winners,
+           locals: {single_winner: true} %>

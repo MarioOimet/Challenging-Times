@@ -1,0 +1,11 @@
+<div class="winner"
+  <p>
+    <strong>NAME: </strong>
+    <% if single_winner %>
+      <%= link_to winner.name, winner_path(winner) %>
+    <% else %>
+      <%= winner.name %>
+    <% end %>
+    <strong>AGE: </strong><%= winner.age %>
+  </p>
+</div>

@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Winner.destroy_all
+
+100.times do |home|
+  Winner.create!(name: Faker::Name.name,
+                age: Faker::Number.between(20, 50))
+end

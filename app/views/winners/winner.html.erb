@@ -1,0 +1,7 @@
+<h2>Particular Winner</h2>
+
+<%= render partial: 'winner',
+           object: @single,
+           locals: {single_winner: false} %>
+           
+<p><%= link_to 'Back', winners_path %></p>
